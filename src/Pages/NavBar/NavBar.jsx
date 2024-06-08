@@ -91,8 +91,8 @@ const NavBar = () => {
                         <img onClick={ handleImage} src={user?.photoURL || "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"} alt="User" className="w-10 h-10 rounded-full cursor-pointer" />
                         {dashboard && (
                             <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
-                                <div className="px-4 py-2 text-sm text-gray-700">{user.displayName}</div>
-                                <div className="px-4 py-2 text-sm text-gray-700">{user.email}</div>
+                                <div className="px-4 py-2 text-sm text-gray-700">{user?.displayName}</div>
+                                <div className="px-4 py-2 text-sm text-gray-700">{user?.email}</div>
                                 <Link to="/dashboard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</Link>
                                 <button
                                     onClick={handleLogout}

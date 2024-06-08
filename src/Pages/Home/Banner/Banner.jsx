@@ -6,7 +6,7 @@ const Banner = () => {
           <Carousel
         className="text-center"
         autoPlay
-        interval={2000}
+        interval={3000}
         infiniteLoop
         stopOnHover={false}
 
