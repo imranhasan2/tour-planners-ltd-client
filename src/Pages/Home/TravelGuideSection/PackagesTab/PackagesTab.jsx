@@ -40,7 +40,7 @@ const PackagesTab = () => {
         <div>
             <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 mt-5">
                 {
-                    packages?.map(pack => <div key={pack._id} className="card  bg-base-100 shadow-xl">
+                    packages?.slice(0,3).map(pack => <div key={pack._id} className="card  bg-base-100 shadow-xl">
                         <figure>
                             <div className="relative">
                                 <img src={pack.spotPhoto} alt="Shoes" />
