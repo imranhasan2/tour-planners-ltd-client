@@ -1,9 +1,33 @@
-import {  NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
+import { useState } from "react";
 
 
 const NavBar = () => {
-  
-        const navbar = <>
+
+    const { user, logOut } = useAuth()
+
+
+    const [dashboard, setDashBoard] = useState(false)
+
+
+
+
+
+    const handleImage = () => {
+        console.log('clicked')
+        setDashBoard(!dashboard)
+
+    }
+
+    const handleLogout = () => {
+        logOut()
+        setDashBoard(false)
+    }
+
+
+
+    const navbar = <>
         <li><NavLink to='/' style={({ isActive }) => {
             return {
                 fontWeight: isActive ? "bold" : "",
@@ -61,20 +85,27 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
 
-                {/* {user ?
+                {user ?
                     <div className="relative flex gap-3">
 
-                        <img src={user?.photoURL || "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"} alt="User" className="w-10 h-10 rounded-full cursor-pointer" />
+                        <img onClick={ handleImage} src={user?.photoURL || "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"} alt="User" className="w-10 h-10 rounded-full cursor-pointer" />
+                        {dashboard && (
+                            <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                                <div className="px-4 py-2 text-sm text-gray-700">{user.displayName}</div>
+                                <div className="px-4 py-2 text-sm text-gray-700">{user.email}</div>
+                                <Link to="/dashboard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</Link>
+                                <button
+                                    onClick={handleLogout}
+                                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                >
+                                    Logout
+                                </button>
+                            </div>
+                        )}
 
 
-                        <span className="absolute top-0 left-full ml-2 bg-white p-1 rounded-md opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                            {user.displayName}
-                        </span>
 
 
-                        <button className="bg-green-500 px-3 py-1 rounded-xl" onClick={logOut}>
-                            LogOut
-                        </button>
                     </div>
 
                     : <div>
@@ -83,7 +114,7 @@ const NavBar = () => {
 
                     </div>
 
-                } */}
+                }
             </div>
         </div>
     );
