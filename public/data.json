@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "spotPhoto": "https://www.tour-planners.com/uploads/A7C3YlwozsqL.jpg",
+    "tourType": "Relaxation",
+    "tripTitle": "DAY LONG RIVER CRUISE",
+    "price": 1000,
+    "description": "During the ruling of the Baro-Bhuiyans, this region was occupied by Chand Ray, the Zaminder of Bikrampur and son of Kedar Ray. According to historian J.M. Sengupta, the region was named Chandpur, following the name of Chand Ray. On the other hand, others say that the name of this region comes from Chand Faqir of Purindapurmahalla of Chandpur, Bangladesh. It is said that an administrator named Shah Ahmed Chand came here from Delhi in the fifteenth century and established a river port. In 1779 AD, Major James Rennel, a British surveyor, drew a map of Bengal during the British rule and included an obscure town called Chandpur. At that time, there were offices and courts at a place called Narsinghpur (which has now sunk) south of Chandpur. The confluence of the Padma and the Meghna was about 60 miles south-west of the present place. This area has now disappeared due to the game of breaking the Meghnariver.The first Chandpur subdivision was formed in 1878 as a result of administrative reorganization during the British rule. On 1 October 1896, Chandpur city was declared as a municipality. It was declared as Chandpur district on 15 February 1984.",
+    "images": [
+      "https://www.tour-planners.com/uploads/ffWX6Q8FAkNi.jpg",
+      "https://www.tour-planners.com/uploads/CCrDZArE19O8.jpg",
+      "https://www.tour-planners.com/uploads/d76GphrAWsmB.jpg"
+    ],
+    "tourGuides": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "profilePhoto": "guide1.jpg",
+        "bio": "Experienced guide with 10 years of trekking experience."
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "profilePhoto": "guide2.jpg",
+        "bio": "Expert in city tours with a vast knowledge of local history."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "spotPhoto": "https://www.tour-planners.com/uploads/t0QSxVAUxwyQ.jpg",
+    "tourType": "Sightseeing",
+    "tripTitle": "THE VENICE OF THE EAST",
+    "price": 800,
+    "description": "Bangladesh creates an unforgettable impression of a land of peace, tranquillity and enormous beauty; land of hundreds of serpentine rivers, crystal clear water lakes surrounded by evergreen hills, luxuriant tropical rain forests, and beautiful cascades of green paddy and tea gardens. World's largest mangrove forest--a World Heritage & home to the Royal Bengal Tigers and other wild lives; World's longest natural unbroken sandy sea beach, rich cultural heritage, relics of ancient civilizations and Buddhist Architecture, colourful ethnic minorities with their primitive life style and culture; old terracotta mosques, temples, churches and historic monuments, friendly and lively peoples and hidden beauty everywhere. This Largest delta in the world rises from the Bay of Bengal and goes up to the footsteps of the Himalayas. The mighty Bay of Bengal guards its coasts.",
+    "images": [
+      "https://www.tour-planners.com/uploads/4uLdjNlAkRGx.jpg",
+      "https://www.tour-planners.com/uploads/otGkrirBkz6D.jpg",
+      "https://www.tour-planners.com/uploads/ytPPmodjtAoN.jpg"
+    ],
+    "tourGuides": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "profilePhoto": "guide1.jpg",
+        "bio": "Experienced guide with 10 years of trekking experience."
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "profilePhoto": "guide2.jpg",
+        "bio": "Expert in city tours with a vast knowledge of local history."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "spotPhoto": "https://www.tour-planners.com/uploads/MFoczOoIG33x.jpg",
+    "tourType": "Cultural",
+    "tripTitle": "BUDDHIST CIRCUIT TOUR IN BANGLADESH",
+    "price": 1200,
+    "description": "Bangladesh creates an unforgettable impression of a land of peace, tranquility and enormous beauty; land of hundreds of serpentine rivers, crystal clear water lakes surrounded by evergreen hills, luxuriant tropical rain forests, and beautiful cascades of green paddy and tea gardens. World's largest mangrove forest--a World Heritage & home to the Royal Bengal Tigers and other wild lives; World's longest natural unbroken sandy sea beach, rich cultural heritage, relics of ancient civilizations and Buddhist Architecture, colorful ethnic minorities with their primitive life style and culture; old terracotta mosques, temples, churches and historic monuments, friendly and lively peoples and hidden beauty everywhere. This Largest delta in the world rises from the Bay of Bengal and goes up to the footsteps of the Himalayas. The mighty Bay of Bengal guards its coasts.",
+    "images": [
+      "https://www.tour-planners.com/uploads/ZhVn5rcnNT7M.jpg",
+      "https://www.tour-planners.com/uploads/SvfDVYftipzP.jpg",
+      "https://www.tour-planners.com/uploads/EnjGYiKus099.jpg"
+    ],
+    "tourGuides": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "profilePhoto": "guide1.jpg",
+        "bio": "Experienced guide with 10 years of trekking experience."
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "profilePhoto": "guide2.jpg",
+        "bio": "Expert in city tours with a vast knowledge of local history."
+      }
+    ]
+  }
+]
