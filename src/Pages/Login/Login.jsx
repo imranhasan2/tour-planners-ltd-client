@@ -9,7 +9,7 @@ import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
 
-const {login} =useAuth()
+    const { login } = useAuth()
     const handleLogin = e => {
 
         e.preventDefault()
@@ -57,7 +57,7 @@ const {login} =useAuth()
 
                 <h1 className='text-center text-3xl font-bold'>Login Now!</h1>
 
-                <div className="hero-content ">
+                <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center ">
 
 
                     <div className="text-center w-1/2">

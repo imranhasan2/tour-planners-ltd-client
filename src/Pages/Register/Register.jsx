@@ -38,7 +38,7 @@ const Register = () => {
 
                 <h1 className='text-center text-3xl font-bold'>SIgn Up!</h1>
 
-                <div className="hero-content flex flex-row-reverse">
+                <div className="flex flex-col lg:flex-row-reverse md:flex-row-reverse justify-center items-center  ">
 
 
                     <div className="text-center  w-1/2 ">
