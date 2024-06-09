@@ -64,7 +64,9 @@ const PackagesTab = () => {
 
             </div>
             <div className="flex justify-center items-center text-center w-full mt-5">
-                <button className="btn btn-outline ">All Package</button>
+                <Link to={'/allPackage'}>
+                    <button className="btn btn-outline ">All Package</button>
+                </Link>
             </div>
 
         </div>

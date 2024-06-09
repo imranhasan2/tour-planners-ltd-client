@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home/Home";
 import DashBoard from "../DashBoard/DashBoard";
 import WhistList from "../DashBoard/WhistList/WhistList";
 import PackageDetails from "../Pages/PackageDetails/PackageDetails";
+import AllPackage from "../Pages/AllPackagePage/AllPackage";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
            {
             path:'/packdetails/:id',
             element:<PackageDetails></PackageDetails>
+           },
+           {
+            path:'allPackage',
+            element:<AllPackage></AllPackage>
            }
         ]
     },
