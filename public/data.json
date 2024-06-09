@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    
     "spotPhoto": "https://www.tour-planners.com/uploads/A7C3YlwozsqL.jpg",
     "tourType": "Relaxation",
     "tripTitle": "DAY LONG RIVER CRUISE",
@@ -13,21 +13,31 @@
     ],
     "tourGuides": [
       {
-        "id": 1,
+        
         "name": "John Doe",
         "profilePhoto": "guide1.jpg",
         "bio": "Experienced guide with 10 years of trekking experience."
       },
       {
-        "id": 2,
+        
         "name": "Jane Smith",
         "profilePhoto": "guide2.jpg",
         "bio": "Expert in city tours with a vast knowledge of local history."
       }
+    ],
+    "tourPlan":[
+      
+        "Cruise will start near from Kanchpur Bridge, Narayanganj.",
+      
+       "Morning Breakfast.",
+      
+      
+        "Morning Snacks."
+      
     ]
   },
   {
-    "id": 2,
+    
     "spotPhoto": "https://www.tour-planners.com/uploads/t0QSxVAUxwyQ.jpg",
     "tourType": "Sightseeing",
     "tripTitle": "THE VENICE OF THE EAST",
@@ -40,21 +50,31 @@
     ],
     "tourGuides": [
       {
-        "id": 1,
+        
         "name": "John Doe",
         "profilePhoto": "guide1.jpg",
         "bio": "Experienced guide with 10 years of trekking experience."
       },
       {
-        "id": 2,
+        
         "name": "Jane Smith",
         "profilePhoto": "guide2.jpg",
         "bio": "Expert in city tours with a vast knowledge of local history."
       }
+    ],
+     "tourPlan":[
+      
+        "Today around 11:00hrs meet and greet with our guide at one predesigned place and proceed to Barisal. En-route sightseeing covering at Lalbagh Fort - is an incomplete 17th-century Mughal fort complex that stands before the Buriganga River in the southwestern part of Dhaka, Bangladesh. ",
+      
+       "Early morning arrives at Barisal and have breakfast at local restaurant. After breakfast visit the floating market -appears as the center of Barisal’s (aka The Venice of Bengal) beauty. Nobody knows when the idea of this floating market began, but it’s a hundred-year old tradition. Development and modernization are taking over the country but it’s surprising to see them not reaching to this river-oriented life yet. Guthia Mosque- the BaitulAmanJame Masjid Complex",
+      
+      
+        "Morning enjoy theVillage life & local Bazar in Barisal.After lunch say goodbye to your hosts and proceed to Dhaka through the Majestic Padma Bridge (the pride of Bangladesh). Late afternoon arrive at Dhaka and transfer to the predesigned place. Tour will be end with lots of memories."
+      
     ]
   },
   {
-    "id": 3,
+  
     "spotPhoto": "https://www.tour-planners.com/uploads/MFoczOoIG33x.jpg",
     "tourType": "Cultural",
     "tripTitle": "BUDDHIST CIRCUIT TOUR IN BANGLADESH",
@@ -67,17 +87,27 @@
     ],
     "tourGuides": [
       {
-        "id": 1,
+        
         "name": "John Doe",
         "profilePhoto": "guide1.jpg",
         "bio": "Experienced guide with 10 years of trekking experience."
       },
       {
-        "id": 2,
+       
         "name": "Jane Smith",
         "profilePhoto": "guide2.jpg",
         "bio": "Expert in city tours with a vast knowledge of local history."
       }
+    ],
+     "tourPlan":[
+      
+        "Arrival at Dhaka International Airport. Meet & greet at the airport and transfer by representative and guide to pre- confirmed hotel of your choice. Multimedia presentation on evolution of Buddhism, Buddhist architecture and sculpture in Bangladesh by an expert (45 min.) optional. Overnight at the hotel in Dhaka. ",
+      
+       "After breakfast at the hotel proceed to sightseeing covering Dharmarajika Buddhist Monastery Complex in Dhaka was built in 1960 and since then it is the center of Buddhist life and culture in Dhaka and Bangladesh. It housed the DharmarajikPali College which was established in 1960 as well. After that proceed to Munshiganj to have a visit at the house of Atish Dipankar(980-1053) Buddhist scholar, ",
+      
+      
+        "After early breakfast at the hotel proceed to Bogra. Upon arrival at Bogra sightseeing covering Mahasthangarh; dating back to at least the 4th century BCE, Mahasthangarh is the earliest urban archaeological site that has been discovered in Bangladesh.One of the highlights of Mahasthangarh is GovindaBhita, where remnants of two Buddhist temples can be visited. The main temple was erected in the 6th century and next to it is a slightly smaller temple, which was built in the 11th century. Later on drive towards to hotel. Overnight at the hotel in Bogra. "
+      
     ]
   }
 ]
