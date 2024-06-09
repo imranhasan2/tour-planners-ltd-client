@@ -3,6 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import usePackages from "../../../../Hooks/UsePackages/usePackages";
 import useAxiosSecure from "../../../../Hooks/UseAxiosSecure/useAxiosSecure";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const PackagesTab = () => {
 
@@ -13,8 +14,8 @@ const PackagesTab = () => {
 
 
     const handleWish = (pack) => {
-        
-        axiosSecure.post('/wishList',{ packageId: pack._id, tourType: pack.tourType, tripTitle: pack.tripTitle, price: pack.price, spotPhoto: pack.spotPhoto })
+
+        axiosSecure.post('/wishList', { packageId: pack._id, tourType: pack.tourType, tripTitle: pack.tripTitle, price: pack.price, spotPhoto: pack.spotPhoto })
             .then(res => {
                 console.log(res.data)
                 if (res.data.insertedId) {
@@ -51,7 +52,10 @@ const PackagesTab = () => {
                             <p>Price: ${pack.price}</p>
                             <div className="card-actions justify-center">
 
-                                <button className="btn btn-warning rounded-lg">View Package</button>
+                                <Link to={`/packdetails/${pack._id}`}><button className="btn btn-warning rounded-lg">View Package</button>
+                                </Link>
+
+
                             </div>
                         </div>
                     </div>)
