@@ -85,7 +85,7 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <input type="submit" value="Login" className="btn" style={{ backgroundColor: "rgba(209, 160, 84, 0.70)" }} />
                             </div>
-                            <p className='text-center'>New here?<Link style={{ backgroundColor: "rgba(209, 160, 84, 0.70)" }} to={'/signUp'}> Create a New Account</Link></p>
+                            <p className='text-center'>New here?<Link to={'/register'} style={{ backgroundColor: "rgba(209, 160, 84, 0.70)" }} > Create a New Account</Link ></p>
                             <SocialLogin></SocialLogin>
                         </form>
 

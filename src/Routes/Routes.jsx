@@ -7,6 +7,9 @@ import DashBoard from "../DashBoard/DashBoard";
 import WhistList from "../DashBoard/WhistList/WhistList";
 import PackageDetails from "../Pages/PackageDetails/PackageDetails";
 import AllPackage from "../Pages/AllPackagePage/AllPackage";
+import TourGuideProfilePage from "../Pages/TourGuideProfile/TourGuideProfilePage";
+import GuideList from "../DashBoard/GuideList/GuideList";
+import MyBooking from "../DashBoard/MyBookings/MyBooking";
 
 export const router = createBrowserRouter([
     {
@@ -42,7 +45,19 @@ export const router = createBrowserRouter([
                 path:'whistList',
                 element:<WhistList></WhistList>
 
+        },
+        {
+            path:'mybooking',
+            element:<MyBooking></MyBooking>
+
+        },
+        // guide routes
+        {
+              path: 'guides',
+               element: <GuideList />  
         },{
+            path:'guideProfile/:id',
+            element:<TourGuideProfilePage></TourGuideProfilePage>
 
         }]
     }
