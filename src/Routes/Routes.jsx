@@ -10,6 +10,7 @@ import AllPackage from "../Pages/AllPackagePage/AllPackage";
 import TourGuideProfilePage from "../Pages/TourGuideProfile/TourGuideProfilePage";
 import GuideList from "../DashBoard/GuideList/GuideList";
 import MyBooking from "../DashBoard/MyBookings/MyBooking";
+import TourPackages from "../Pages/TourPackages/TourPackages";
 
 export const router = createBrowserRouter([
     {
@@ -33,6 +34,13 @@ export const router = createBrowserRouter([
            {
             path:'allPackage',
             element:<AllPackage></AllPackage>
+           },
+           {
+            path:'/tourPackages/:type',
+            element:<TourPackages></TourPackages>
+           },{
+            path:'/packdetails/:id',
+            element:<PackageDetails></PackageDetails>
            }
         ]
     },
