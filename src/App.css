@@ -1,17 +1,17 @@
 .modal-content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    right: auto;
-    bottom: auto;
-    margin-right: '-50%';
+    left: 25%;
+    /* right: auto;
+    bottom: auto; */
+    margin: auto;
     transform: 'translate(-50%, -50%)';
     background: #f8f9fa;
     padding: 20px;
     box-shadow: '0 4px 8px rgba(0,0,0,0.2)';
     border-radius: 4px;
     outline: none;
-    width: 80%; /* Increase the width to 80% */
+    width: 50%; 
     max-width: 800px;
     
 }
