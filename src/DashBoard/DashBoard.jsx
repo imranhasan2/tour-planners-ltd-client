@@ -3,18 +3,19 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const DashBoard = () => {
 
+    
 
     return (
-         <div className="flex">
+        <div className="flex">
             <div className="w-64 min-h-screen p-6 space-y-4 bg-[#D1A054] flex flex-col">
-               
 
-                {/* My WishList NavLink */}
+
+                {/*User Navlink */}
                 <NavLink
                     to="/dashboard/whistList"
-                    className="text-xl font-bold hover:text-blue-600 mb-5"
+                    className="text-xl font-bold hover:text-blue-600 "
                 >
-                    My WishList
+                    My Profile
                 </NavLink>
                 <NavLink
                     to="/dashboard/mybooking"
@@ -22,10 +23,23 @@ const DashBoard = () => {
                 >
                     My Booking
                 </NavLink>
+                <NavLink
+                    to="/dashboard/whistList"
+                    className="text-xl font-bold hover:text-blue-600 "
+                >
+                    My WishList
+                </NavLink>
+                <NavLink
+                    to="/dashboard/whistList"
+                    className="text-xl font-bold hover:text-blue-600 "
+                >
+                    Request To Admin
+                </NavLink>
 
 
 
-                 {/* Guide Profile NavLink with margin-bottom */}
+
+                {/* Guide Profile NavLink with margin-bottom */}
                 <NavLink
                     to="/dashboard/guides"
                     className="text-xl font-bold hover:text-blue-600 mb-5"
@@ -34,6 +48,11 @@ const DashBoard = () => {
                 </NavLink>
 
                 <hr />
+
+
+
+
+
 
                 {/* Home NavLink */}
                 <NavLink
