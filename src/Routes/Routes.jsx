@@ -11,6 +11,9 @@ import TourGuideProfilePage from "../Pages/TourGuideProfile/TourGuideProfilePage
 import GuideList from "../DashBoard/GuideList/GuideList";
 import MyBooking from "../DashBoard/MyBookings/MyBooking";
 import TourPackages from "../Pages/TourPackages/TourPackages";
+import AllUsers from "../DashBoard/AllUsers/AllUsers";
+import MyProfile from "../DashBoard/MyProfile/MyProfile";
+import RequestToAdmin from "../DashBoard/RequestToAdmin/RequestToAdmin";
 
 export const router = createBrowserRouter([
     {
@@ -22,51 +25,64 @@ export const router = createBrowserRouter([
         },
         {
             path: '/register',
-            element:<Register></Register>
-           },{
-            path:'/',
-            element:<Home></Home>
-           },
-           {
-            path:'/packdetails/:id',
-            element:<PackageDetails></PackageDetails>
-           },
-           {
-            path:'allPackage',
-            element:<AllPackage></AllPackage>
-           },
-           {
-            path:'/tourPackages/:type',
-            element:<TourPackages></TourPackages>
-           },{
-            path:'/packdetails/:id',
-            element:<PackageDetails></PackageDetails>
-           }
+            element: <Register></Register>
+        }, {
+            path: '/',
+            element: <Home></Home>
+        },
+        {
+            path: '/packdetails/:id',
+            element: <PackageDetails></PackageDetails>
+        },
+        {
+            path: 'allPackage',
+            element: <AllPackage></AllPackage>
+        },
+        {
+            path: '/tourPackages/:type',
+            element: <TourPackages></TourPackages>
+        },
         ]
     },
     {
-        path:'dashboard',
-        element:<DashBoard></DashBoard>,
-        children:[
+        path: 'dashboard',
+        element: <DashBoard></DashBoard>,
+        children: [
             // user routes
             {
-                path:'whistList',
-                element:<WhistList></WhistList>
+                path: 'wishList',
+                element: <WhistList></WhistList>
 
-        },
-        {
-            path:'mybooking',
-            element:<MyBooking></MyBooking>
+            },
+            {
+                path: 'mybooking',
+                element: <MyBooking></MyBooking>
 
-        },
-        // guide routes
-        {
-              path: 'guides',
-               element: <GuideList />  
-        },{
-            path:'guideProfile/:id',
-            element:<TourGuideProfilePage></TourGuideProfilePage>
+            },
+            {
+                path: 'myProfile',
+                element: <MyProfile></MyProfile>
 
-        }]
+            },{
+                path:'requestAdmin',
+                element:<RequestToAdmin></RequestToAdmin>
+            },
+            
+            // guide routes
+            {
+                path: 'guides',
+                element: <GuideList />
+            }, {
+                path: 'guideProfile/:id',
+                element: <TourGuideProfilePage></TourGuideProfilePage>
+
+            },
+
+            // admin routes
+            {
+                path: 'allUser',
+                element: <AllUsers></AllUsers>
+
+            },]
     }
 ]);

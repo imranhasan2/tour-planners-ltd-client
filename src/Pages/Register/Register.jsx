@@ -5,28 +5,39 @@ import loginPng from '../../assets/authentication.png'
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
+import usePublicAxios from "../../Hooks/usePublic/usePublicAxios";
 
 const Register = () => {
     const { createUser } = useAuth()
+
+    const axiosPublic = usePublicAxios()
 
     const { register, handleSubmit, formState: { errors }, } = useForm()
 
 
     const onSubmit = (data) => {
-        console.log(data)
+        console.log(data);
         createUser(data.email, data.password)
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                const user = {
+                    email: data.email,
+                    pass: data.password
+                };
+                return axiosPublic.post('/users', user);
+            })
+            .then(res => {
+                console.log(res.data);
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "SuccessFully Registered",
+                    title: "Successfully Registered",
                     showConfirmButton: false,
                     timer: 1500
                 });
             })
-            .catch(error => console.error(error))
-    }
+            .catch(error => console.error(error));
+    };
 
 
     return (

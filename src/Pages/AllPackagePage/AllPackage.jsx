@@ -1,10 +1,34 @@
 import { FaHeart } from "react-icons/fa";
 import usePackages from "../../Hooks/UsePackages/usePackages";
 import { Link } from "react-router-dom";
+import useAxiosSecure from "../../Hooks/UseAxiosSecure/useAxiosSecure";
+import Swal from "sweetalert2";
 
 
 const AllPackage = () => {
+
+
     const [packages] = usePackages()
+    const axiosSecure=useAxiosSecure()
+
+    
+    const handleWish = (pack) => {
+
+        axiosSecure.post('/wishList', { packageId: pack._id, tourType: pack.tourType, tripTitle: pack.tripTitle, price: pack.price, spotPhoto: pack.spotPhoto })
+            .then(res => {
+                console.log(res.data)
+                if (res.data.insertedId) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Item Added To wishList",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            })
+
+    }
     return (
         <div>
             <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 mt-5">
@@ -13,7 +37,7 @@ const AllPackage = () => {
                         <figure>
                             <div className="relative">
                                 <img src={pack.spotPhoto} alt="Shoes" />
-                                <FaHeart  size={24} className="absolute top-0 right-0 text-red-600 mr-8 mt-8 "></FaHeart>
+                                <FaHeart onClick={() => handleWish(pack)} size={24} className="absolute top-0 right-0 text-red-600 mr-8 mt-8 "></FaHeart>
                             </div></figure>
                         <div className="card-body">
                             <h2 className="card-title">
